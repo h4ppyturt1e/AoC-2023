@@ -25,9 +25,11 @@ def download_input(day):
     print(f"Input file for Day {day} downloaded successfully.")
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("Usage: python getTest.py <day>")
-        sys.exit(1)
+    # if len(sys.argv) != 2:
+    #     print("Usage: python getTest.py <day>")
+    #     sys.exit(1)
     
-    day = sys.argv[1]
-    download_input(day)
+    # day = sys.argv[1]
+    
+    for day in range(1, 26):
+        download_input(day)
