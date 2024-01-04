@@ -17,7 +17,7 @@ def download_input(day):
     response = requests.get(url, headers=headers)
     response.raise_for_status()
     input_text = response.text.strip()
-    file_path = f"./Day {day}/test{day}.txt"
+    file_path = f"./Day {day}/test.txt"
     
     with open(file_path, "w") as file:
         file.write(input_text)

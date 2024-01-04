@@ -18,7 +18,7 @@ if __name__ == '__main__':
     p1Time = time() - start
     
     part2 = solvePart2(test)
-    p2Time = time() - p1Time
+    p2Time = time() - p1Time - start
     
     # print solutions and show time elapsed
     print(f'Part 1 ({p1Time:.4f}s):\n{part1}\n')

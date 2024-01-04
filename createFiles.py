@@ -17,7 +17,7 @@ def createFiles():
             shutil.copyfile('template.py', filename)
         
         # create test file
-        filename = os.path.join(foldername, 'test' + str(i) + '.txt')
+        filename = os.path.join(foldername, 'test.txt')
         if not os.path.exists(filename):
             with open(filename, 'w') as f:
                 f.write('')
